@@ -19,7 +19,7 @@ if uploaded_file:
     
     # Inicializar o estado da sessão para guardar as entradas
     if 'lista_entrada' not in st.session_state:
-        st.session_state.lista_entrada = pd.DataFrame(columns=['Código', 'Localização', 'Descrição', 'Quantidade'])
+        st.session_state.lista_entrada = pd.DataFrame(columns=['Cód', 'Local', 'Descrição'])
 
     # --- FORMULÁRIO DE ENTRADA ---
     with st.expander("➕ Adicionar Novo Item", expanded=True):
